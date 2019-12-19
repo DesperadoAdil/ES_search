@@ -40,27 +40,27 @@
 #### 项目效果
 - **检索词：`价格`**
 - 返回关键词常见搭配的结果
-    ![image1](./docs/1.jpg)
+    ![image1](./1.jpg)
 
 - 给定返回词的词性，返回常见搭配的结果
     - 名词
-        ![image2_n](./docs/2_n.jpg)
+        ![image2_n](./2_n.jpg)
     - 动词
-        ![image2_v](./docs/2_v.jpg)
+        ![image2_v](./2_v.jpg)
     - 数词
-        ![image2_m](./docs/2_m.jpg)
+        ![image2_m](./2_m.jpg)
     - 形容词
-        ![image2_a](./docs/2_a.jpg)
+        ![image2_a](./2_a.jpg)
 
 - 给定检索词和关键词距离限制，返回常见搭配的结果
     - 数词
-        ![image3_m](./docs/3_m.jpg)
+        ![image3_m](./3_m.jpg)
     - 形容词
-        ![image3_a](./docs/3_a.jpg)
+        ![image3_a](./3_a.jpg)
 
 - 给定多个关键词，返回相应的结果
-    ![image4_1](./docs/4_1.jpg)
-    ![image4_2](./docs/4_2.jpg)
+    ![image4_1](./4_1.jpg)
+    ![image4_2](./4_2.jpg)
 
 
 ### 语料库
