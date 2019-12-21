@@ -79,7 +79,7 @@ def search():
 
     _list = [i[0] for i in sorted(_dict.items(), key = lambda x: x[1], reverse=True)]
     if _list != []:
-        return render_template("search.html", search=True, success=True, ans=_list)
+        return render_template("search.html", search=True, success=True, ans=_list, items=request.form)
     else:
         return render_template("search.html", search=True, success=False)
 
