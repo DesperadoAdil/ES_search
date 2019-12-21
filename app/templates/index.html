@@ -7,6 +7,32 @@
     </div>
 
     <form name="search" action="/search" method="post">
+        <select name="lang">
+            <option value="cmn" selected>中文</option>
+            <option value="eng">英语</option>
+            <option value="als">阿尔巴尼亚语</option>
+            <option value="arb">阿拉伯语</option>
+            <option value="bul">保加利亚语</option>
+            <option value="cat">加泰罗尼亚语</option>
+            <option value="dan">丹麦语</option>
+            <option value="ell">希腊语</option>
+            <option value="eus">巴斯克语</option>
+            <option value="fas">波斯语</option>
+            <option value="fin">芬兰语</option>
+            <option value="fra">法语</option>
+            <option value="heb">希伯来语</option>
+            <option value="ind">印度语</option>
+            <option value="ita">意大利语</option>
+            <option value="jpn">日语</option>
+            <option value="nld">荷兰语</option>
+            <option value="nno">挪威语</option>
+            <option value="pol">波兰语</option>
+            <option value="por">葡萄牙语</option>
+            <option value="slv">塞尔维亚语</option>
+            <option value="spa">西班牙语</option>
+            <option value="swe">瑞典语</option>
+            <option value="tha">泰语</option>
+        </select>
         <input type="text" name="item" />
         <input type="submit" value="搜索">
         <br>返回结果：
@@ -30,6 +56,11 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+        </select>
+        <br>查询同义词：
+        <select name="synset">
+            <option value="no" selected>否</option>
+            <option value="yes">是</option>
         </select>
     </form>
 </div>
