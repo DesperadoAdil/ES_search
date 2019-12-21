@@ -21,7 +21,6 @@ def search():
                 _dict[key] = 1
 
         items = re.split('[\s+-]+', str)
-        print (items)
         payload = {
         	"query": {
                 "bool": {
@@ -94,12 +93,12 @@ def search():
     radius = int(request.form["radius"])
     synset = request.form["synset"]
 
-    if lang != app.config["NATIVE_LANGUAGE"]:
+    if lang != app.config["LANGUAGES"]["中文"]:
         chn_list = []
         for item in re.split('[\s+-]+', origin_items):
             chn_item = []
             for ss in wn.synsets(item, lang=lang):
-                chn_item.extend(ss.lemma_names(app.config["NATIVE_LANGUAGE"]))
+                chn_item.extend(ss.lemma_names(app.config["LANGUAGES"]["中文"]))
             chn_list.append(list(set(chn_item)))
         for item in chn_list[0]:
             group(1, item)
